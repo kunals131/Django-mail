@@ -64,7 +64,7 @@ fetch('/emails/' + id)
   <li class="list-group-item"><b>Subject : </b> <span>${email['subject']}</span></li>
   <li class="list-group-item"><b>TimeStamp : </b> <span>${email['timestamp']}</span></li>
     </ul>
-    <div class="card" style="width: 40rem;">
+    <div class="card mb-3" style="width: 40rem;">
     <div class="card-body">
     <h5 class="card-title">Body</h5>
     <h6 class="card-subtitle mb-2 text-muted">Read : </h6>
@@ -92,7 +92,7 @@ fetch('/emails/' + id)
 
     //creating the archive button in the dom
     const archive = document.createElement('button');
-    archive.className = "btn-primary";
+    archive.className = "btn btn-primary mx-2   ";
     if (email['archived']) {
         archive.innerHTML = "Unarchive";
     }
@@ -112,7 +112,7 @@ fetch('/emails/' + id)
     //read and unread button
 
     const readButton = document.createElement('button');
-    readButton.className = "btn-primary";
+    readButton.className = "btn btn-primary";
     readButton.innerHTML = "Mark as unread";
     readButton.addEventListener('click', function() {
         fetch('/emails/'+email['id'], {
