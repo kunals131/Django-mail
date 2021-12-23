@@ -1,5 +1,4 @@
-# Django Mail
-
+<h1 align="center">Django Mail</h1>
 ![Djano-logo](https://www.djangoproject.com/m/img/logos/django-logo-negative.png)
 
 
